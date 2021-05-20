@@ -10,7 +10,7 @@ class Calculator extends StatefulWidget {
 class _CalculatorState extends State<Calculator> {
   final evaluator = ExpressionEvaluator();
   String _display = "";
-  final RegExp regExp = RegExp("[0-9]+");
+  final RegExp regExp = RegExp("\d+");
   @override
   Widget build(BuildContext context) {
     return Scaffold(
